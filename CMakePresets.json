@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "Preset1",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/preset_dir1"
+    },
+    {
+      "name": "Preset2",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build/preset_dir2"
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "Preset1",
+      "configurePreset": "Preset1"
+    },
+    {
+      "name": "Preset2",
+      "configurePreset": "Preset2"
+    }
+  ]
+}
