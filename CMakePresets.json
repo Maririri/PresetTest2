@@ -23,7 +23,11 @@
       "configurePreset": "Preset1"
     },
     {
-      "name": "Preset2",
+      "name": "Preset1",
+      "configurePreset": "Preset1"
+    },
+    {
+      "name": "Preset1",
       "configurePreset": "Preset2"
     }
   ]
